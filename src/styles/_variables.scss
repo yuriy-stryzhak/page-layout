@@ -1,0 +1,25 @@
+
+//functions
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+// colors
+// names taken from http://www.color-blindness.com/color-name-hue/
+$black: #000;
+$white: #fff;
+$white-smoke: #F9F9F9;
+
+$trout: #4A4D4E;
+$silver: #C4C4C4;
+$dark-gray: #B4B4B4;
+$night-rider: #333333;
+
+$pacific-blue: #0093E6;
+
+// fonts
+$sans-serif: 'Roboto', sans-serif;
+
+// global classes
+
