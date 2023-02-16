@@ -1,0 +1,17 @@
+.hero {
+    background-color: $white-smoke;
+    background-image: url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: calc(50% + 39.5vw) auto;
+    background-position: right top;
+    padding-bottom: 100px;
+
+    &__title {
+        font-weight: bold;
+        line-height: .9;
+        opacity: .8;
+        font-size: calc(#{$index} * 7.32);
+        padding-top: calc(#{$index} * 7.8);
+        margin-left: calc(#{$index} * 5.3);;
+    }
+}

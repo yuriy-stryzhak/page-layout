@@ -1,6 +1,4 @@
-# Webpack Frontend Starterkit
-
-A lightweight foundation for your next webpack based frontend project.
+# Test page layout
 
 ### Installation
 

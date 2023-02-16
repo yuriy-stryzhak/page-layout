@@ -1,0 +1,29 @@
+.header {
+	padding: 15px 0;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__nav-link {
+		color: $trout;
+		font-size: rem(24);
+		border-bottom: 1px solid transparent;
+		transition: $transition-all;
+
+		& + .header__nav-link {
+			margin-left: 50px;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			border-bottom-color: rgba($trout, .5);
+		}
+	}
+}
+
+.logo {
+	max-width: 60px;
+	margin-right: 40px;
+}
