@@ -1,0 +1,50 @@
+.steps {
+    position: relative;
+    padding-bottom: 50px;
+
+    &:after {
+        content: '';
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $white-smoke;
+        z-index: -1;
+    }
+
+    &__wrapper {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+
+    &__list {
+        font-size: rem(24);
+        font-weight: normal;
+        counter-reset: steps;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 40px;
+        row-gap: 27px;
+        margin: 100px 45px 0;
+    }
+
+    &__list-item {
+        margin-bottom: 27px;
+        position: relative;
+        padding-left: 90px;
+
+        &:before {
+            counter-increment: steps;
+            content: '0' counter(steps);
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 0.4;
+            color: $pacific-blue;
+            font-size: rem(50);
+            font-weight: 400;
+        }
+    }
+}
