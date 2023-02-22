@@ -1,0 +1,119 @@
+.progress {
+    padding: 180px 0;
+
+    .h3-title {
+        width: calc(100% - 130px);
+        margin-bottom: 100px;
+    }
+
+    .title-line:after {
+        border-left-width: 26px;
+    }
+
+    &__wrapper {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    &__line {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 10px;
+        margin-bottom: 120px;
+    }
+
+    &__line-item {
+
+        &.active {
+            img {
+                filter: brightness(0) saturate(100%) invert(48%) sepia(66%) saturate(3785%) hue-rotate(176deg) brightness(94%) contrast(101%);
+            }
+
+            .progress__element {
+
+                &:before {
+                    border-color: $pacific-blue;
+                    background-color: $pacific-blue;
+                    width: 20px;
+                    height: 20px;
+                    box-shadow: inset 0px 0px 0px 3px $white;
+                }
+                
+                &::after {
+                    background-color: $pacific-blue;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:last-of-type {
+            .progress__element {
+                background-color: transparent;
+                
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__image {
+        margin-bottom: 35px;
+    }
+
+    &__element {
+        background-color: $dark-gray;
+        height: 2px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid $dark-gray;
+            background-color: $white;
+            z-index: 1;
+            transition: all .25s ease-in-out;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            will-change: width;
+            transition: width .5s ease-in-out;
+        }
+    }
+
+    &__text {
+        font-size: rem(20);
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        align-items: center;
+        
+        &:before {
+            content: '';
+            height: 3px;
+            display: inline-block;
+            background-color: $gainsboro;
+            width: 100%;
+            flex: 1;
+            margin-right: 30px;
+        }
+    }
+}
