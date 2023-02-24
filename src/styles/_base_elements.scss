@@ -56,6 +56,13 @@ input[type="button"] {
 	}
 }
 
+input {
+	outline: none;
+	border: none;
+	display: inline-block;
+	width: 100%;
+}
+
 h4,
 .h4-title {
 	font-weight: bold;

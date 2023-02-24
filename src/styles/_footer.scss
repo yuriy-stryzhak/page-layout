@@ -1,3 +1,51 @@
 .footer {
-    height: 700px;
+    background-color: $night-rider;
+    padding: 100px 0;
+    color: $white;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        margin-bottom: 150px;
+    }
+
+    &__nav {
+        margin-left: 280px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex: 1;
+        grid-gap: 15px 145px;
+    }
+
+    &__nav-link {
+        color: $white;
+        font-size: rem(24);
+        line-height: 1;
+        font-weight: normal;
+        display: inline;
+        transition: $transition-all;
+
+        &:hover {
+            color: $pacific-blue;
+        }
+    }
+}
+
+.social {
+
+    &__link {
+        display: inline-block;
+        transition: $transition-all;
+
+        &:hover {
+            filter: invert(.5);
+        }
+
+        & + a {
+            margin-left: 40px;
+        }
+    }
 }

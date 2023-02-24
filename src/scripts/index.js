@@ -44,3 +44,22 @@ document.addEventListener('scroll', function() {
     });
   }
 });
+
+//Sending form
+
+const form = document.querySelector('.js-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.querySelector('input[name=name]').value;
+  const phone = document.querySelector('input[name=phone]').value;
+  const mail = document.querySelector('input[name=mail]').value;
+  const range = document.querySelector('input[type=range]').value;
+
+  alert(
+      `You are submitting a form with this data:
+      Name: ${name},
+      Phone: ${phone},
+      Mail: ${mail},
+      Range: ${range}`
+  );
+});

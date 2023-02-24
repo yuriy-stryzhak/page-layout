@@ -6,6 +6,10 @@
   <title>Test page layout</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <meta name="description" content="Test page layout">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-range-component/dist/vue-range-slider.css">
+  <script src="https://unpkg.com/vue-range-component"></script>
 </head>
 
 <body style="opacity: 0;">
@@ -62,58 +66,58 @@
       </div>
     </section>
 
-    <section class="slider">
+    <section class="slider-sec">
 
       <div class="container">
 
-        <h3 class="h3-title slider__title">Lorem</h3>
+        <h3 class="h3-title slider-sec__title">Lorem</h3>
 
         <div class="swiper">
 
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide slider__item">
-              <div class="slider__item-title">Lorem Ipsum</div>
-              <ul class="slider__list">
-                <li class="slider__list-item">It is a long established fact that a reader will be distracted</li>
-                <li class="slider__list-item">The readable content</li>
-                <li class="slider__list-item">There are many variations of passages</li>
+            <div class="swiper-slide slider-sec__item">
+              <div class="slider-sec__item-title">Lorem Ipsum</div>
+              <ul class="slider-sec__list">
+                <li class="slider-sec__list-item">It is a long established fact that a reader will be distracted</li>
+                <li class="slider-sec__list-item">The readable content</li>
+                <li class="slider-sec__list-item">There are many variations of passages</li>
               </ul>
             </div>
 
-            <div class="swiper-slide slider__item">
-              <div class="slider__item-title">Lorem Ipsum</div>
-              <ul class="slider__list">
-                <li class="slider__list-item">It is a long established fact that a reader will be distracted</li>
-                <li class="slider__list-item">The readable content</li>
-                <li class="slider__list-item">There are many variations of passages</li>
+            <div class="swiper-slide slider-sec__item">
+              <div class="slider-sec__item-title">Lorem Ipsum</div>
+              <ul class="slider-sec__list">
+                <li class="slider-sec__list-item">It is a long established fact that a reader will be distracted</li>
+                <li class="slider-sec__list-item">The readable content</li>
+                <li class="slider-sec__list-item">There are many variations of passages</li>
               </ul>
             </div>
 
-            <div class="swiper-slide slider__item">
-              <div class="slider__item-title">Lorem Ipsum</div>
-              <ul class="slider__list">
-                <li class="slider__list-item">It is a long established fact that a reader will be distracted</li>
-                <li class="slider__list-item">The readable content</li>
-                <li class="slider__list-item">There are many variations of passages</li>
+            <div class="swiper-slide slider-sec__item">
+              <div class="slider-sec__item-title">Lorem Ipsum</div>
+              <ul class="slider-sec__list">
+                <li class="slider-sec__list-item">It is a long established fact that a reader will be distracted</li>
+                <li class="slider-sec__list-item">The readable content</li>
+                <li class="slider-sec__list-item">There are many variations of passages</li>
               </ul>
             </div>
 
-            <div class="swiper-slide slider__item">
-              <div class="slider__item-title">Lorem Ipsum</div>
-              <ul class="slider__list">
-                <li class="slider__list-item">It is a long established fact that a reader will be distracted</li>
-                <li class="slider__list-item">The readable content</li>
-                <li class="slider__list-item">There are many variations of passages</li>
+            <div class="swiper-slide slider-sec__item">
+              <div class="slider-sec__item-title">Lorem Ipsum</div>
+              <ul class="slider-sec__list">
+                <li class="slider-sec__list-item">It is a long established fact that a reader will be distracted</li>
+                <li class="slider-sec__list-item">The readable content</li>
+                <li class="slider-sec__list-item">There are many variations of passages</li>
               </ul>
             </div>
 
-            <div class="swiper-slide slider__item">
-              <div class="slider__item-title">Lorem Ipsum</div>
-              <ul class="slider__list">
-                <li class="slider__list-item">It is a long established fact that a reader will be distracted</li>
-                <li class="slider__list-item">The readable content</li>
-                <li class="slider__list-item">There are many variations of passages</li>
+            <div class="swiper-slide slider-sec__item">
+              <div class="slider-sec__item-title">Lorem Ipsum</div>
+              <ul class="slider-sec__list">
+                <li class="slider-sec__list-item">It is a long established fact that a reader will be distracted</li>
+                <li class="slider-sec__list-item">The readable content</li>
+                <li class="slider-sec__list-item">There are many variations of passages</li>
               </ul>
             </div>
             
@@ -121,10 +125,10 @@
 
           <div class="swiper-pagination"></div>
 
-          <div class="slider__button swiper-button-prev">
+          <div class="slider-sec__button swiper-button-prev">
             <img src="images/slider-arrow.svg" alt="arrow-img">
           </div>
-          <div class="slider__button swiper-button-next">
+          <div class="slider-sec__button swiper-button-next">
             <img src="images/slider-arrow.svg" alt="arrow-img">
           </div>
         </div>
@@ -284,10 +288,155 @@
         </div>
       </div>
     </section>
+
+    <section class="sticker">
+      <div class="container">
+        <div class="sticker__wrapper">
+          <div class="sticker__item">
+            <div class="sticker__pic"></div>
+            <div class="sticker__text">Lorem Ipsum is simply</div>
+          </div>
+          <div class="sticker__item">
+            <div class="sticker__pic"></div>
+            <div class="sticker__text">Lorem Ipsum is simply</div>
+          </div>
+          <div class="sticker__item">
+            <div class="sticker__pic"></div>
+            <div class="sticker__text">Lorem Ipsum is simply</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h3 class="h3-title contact__title">Lorem Ipsum is simply dummy text</h3>
+        <div class="contact__wrapper">
+
+          <div class="contact__form">
+            <div class="contact__form-title">It is a long established <br>
+              fact that a reader</div>
+
+            <div class="form">
+              <form action="#" method="post" class="js-form">
+
+                  <div class="form__element">
+                    <input type="text" class="form__input" name="name" required>
+                    <span class="form__placeholder">Name</span>
+                    <span class="form__error">Lorem Ipsum is simply dummy</span>
+                  </div>
+
+                  <div class="form__wrapper">
+                    <div class="form__element">
+                      <input type="tel" name="phone" class="form__input" required>
+                      <span class="form__placeholder">Phone</span>
+                      <span class="form__error">Lorem Ipsum is simply dummy</span>
+                    </div>
+
+                    <div class="form__element">
+                      <input type="text" name="mail" class="form__input" required>
+                      <span class="form__placeholder">E-mail</span>
+                      <span class="form__error">Lorem Ipsum is simply dummy</span>
+                    </div>
+                  </div>
+
+                  <div id="range-vue">
+                    <vue-range-slider 
+                      v-model="value" 
+                      :min="min" 
+                      :max="max" 
+                      :formatter="formatter" 
+                      :step="step" 
+                      :label="label" 
+                      :single-value="true" 
+                      :piecewise="true" 
+                      :piecewise-label="true"
+                    ></vue-range-slider>
+                  </div>
+
+                  <div class="form__wrapper">
+                    <div class="form__element form__element-checkbox">
+                      <label for="form__input-checkbox" class="form__label">Lorem Ipsum is simply dummy text</label>
+                      <input checked type="checkbox" id="form__input-checkbox" class="form__input-checkbox" required>
+                      <span class="form__checkbox-dot"></span>
+                      <span class="form__error">Lorem Ipsum is simply dummy</span>
+                    </div>
+
+                    <button type="submit">Lorem Ipsum</button>
+                  </div>
+
+              </form>
+            </div>
+
+          </div>
+
+          <div class="contact__desc">
+            <div class="contact__form-title">It is a long established <br>
+              fact that a reader</div>
+            <div class="contact__form-mail">
+              <a href="mailto:support@email.com">support@email.com</a>
+            </div>
+
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+          </div>
+        </div>
+      </div>
+    </section>
     
   </main>
 
-  <footer class="footer">footer</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+        <div class="footer__aside">
+          <div class="social">
+            <a href="#" class="social__link"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="#" class="social__link"><img src="images/instagram.svg" alt="instagram"></a>
+            <a href="#" class="social__link"><img src="images/youtube.svg" alt="youtube"></a>
+            <a href="#" class="social__link"><img src="images/twitter.svg" alt="twitter"></a>
+          </div>
+
+          <div class="footer__copy">© 2020 Vis-A-Vis</div>
+        </div>
+
+        <ul class="footer__nav">
+          <li><a class="footer__nav-link" href="#">Lorem</a></li>
+          <li><a class="footer__nav-link" href="#">Ipsum</a></li>
+          <li><a class="footer__nav-link" href="#">Simply</a></li>
+          <li><a class="footer__nav-link" href="#">Dummy</a></li>
+          <li><a class="footer__nav-link" href="#">Lorem</a></li>
+          <li><a class="footer__nav-link" href="#">Ipsum</a></li>
+          <li><a class="footer__nav-link" href="#">Simply</a></li>
+          <li><a class="footer__nav-link" href="#">Dummy</a></li>
+          <li><a class="footer__nav-link" href="#">Lorem</a></li>
+          <li><a class="footer__nav-link" href="#">Ipsum</a></li>
+          <li><a class="footer__nav-link" href="#">Simply</a></li>
+          <li><a class="footer__nav-link" href="#">Dummy</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var app = new Vue({
+      el: '#range-vue',
+      data: {
+        value: 3000
+      },
+      created() {
+        this.min = 0
+        this.max = 7000
+        this.step=500
+        this.label="Range Slider"
+        this.formatter = value => `${value} грн`
+        VueRangeSlider.methods.handleKeyup = ()=> console.log
+        VueRangeSlider.methods.handleKeydown = ()=> console.log
+      }
+    })
+  </script>
 
 </body>
 </html>

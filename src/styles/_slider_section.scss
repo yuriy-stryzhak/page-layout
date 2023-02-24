@@ -1,4 +1,4 @@
-.slider {
+.slider-sec {
     margin-top: 300px;
     position: relative;
     
@@ -27,7 +27,7 @@
 
         &.swiper-slide-active,
         &.swiper-slide-next,
-        &.swiper-slide-next + .slider__item {
+        &.swiper-slide-next + .slider-sec__item {
             opacity: 1;
         }
     }
@@ -79,12 +79,16 @@
         }
     }
 
-    .slider__button {
+    .slider-sec__button {
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
         border-radius: 10px;
         background-color: $white;
         width: 60px;
         height: 60px;
+
+        &:after {
+            content: none;
+        }
     }
 
     .swiper-button-prev {
