@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 
+
 // Swiper slider imports
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
@@ -42,6 +43,7 @@ document.addEventListener('scroll', function() {
     });
   }
 });
+
 
 //Sending form
 const form = document.querySelector('.js-form');
