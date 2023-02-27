@@ -228,66 +228,21 @@
 
     <section class="posts">
       <div class="container">
-        <div class="posts__wrapper">
 
-          <div class="posts__item">
-            <div class="posts__pic"></div>
-            <div class="posts__title">Lorem Ipsum is simply dummy text</div>
-            <div class="posts__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-            <ul class="posts__list">
-              <li class="posts__list-item">Lorem Ipsum has been the industry's</li>
-              <li class="posts__list-item">Standard dummy text ever since</li>
-              <li class="posts__list-item">But also the leap into electronic typesetting</li>
-            </ul>
-          </div>
+        <div id="posts-vue">
 
-          <div class="posts__item">
-            <div class="posts__pic"></div>
-            <div class="posts__title">Lorem Ipsum is simply dummy text</div>
-            <div class="posts__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-            <ul class="posts__list">
-              <li class="posts__list-item">Lorem Ipsum has been the industry's</li>
-              <li class="posts__list-item">Standard dummy text ever since</li>
-              <li class="posts__list-item">But also the leap into electronic</li>
-              <li class="posts__list-item">It was popularised in the 1960s</li>
-            </ul>
-          </div>
-
-          <div class="posts__item">
-            <div class="posts__pic"></div>
-            <div class="posts__title">Lorem Ipsum is simply dummy text</div>
-            <div class="posts__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-            <ul class="posts__list">
-              <li class="posts__list-item">Lorem Ipsum has been the industry's standard dummy text ever since</li>
-              <li class="posts__list-item">But also the leap into electronic typesetting</li>
-            </ul>
-          </div>
-
-          <div class="posts__item">
-            <div class="posts__pic"></div>
-            <div class="posts__title">Lorem Ipsum is simply dummy text</div>
-            <div class="posts__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-            <ul class="posts__list">
-              <li class="posts__list-item">Lorem Ipsum has been the industry's</li>
-              <li class="posts__list-item">Standard dummy text ever since</li>
-              <li class="posts__list-item">But also the leap into electronic typesetting</li>
-            </ul>
-          </div>
-
-          <div class="posts__item">
-            <div class="posts__pic"></div>
-            <div class="posts__title">Lorem Ipsum is simply dummy text</div>
-            <div class="posts__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-            <ul class="posts__list">
-              <li class="posts__list-item">Lorem Ipsum has been the industry's</li>
-              <li class="posts__list-item">Standard dummy text ever since</li>
-              <li class="posts__list-item">But also the leap into electronic typesetting</li>
-            </ul>
-          </div>
+          <app-posts />
 
         </div>
       </div>
     </section>
+
+    <script src="components/app-posts.js"></script>
+    <script>
+      new Vue({
+        el: '#posts-vue'
+      })
+    </script>
 
     <section class="sticker">
       <div class="container">
@@ -357,7 +312,7 @@
                   <div class="form__wrapper">
                     <div class="form__element form__element-checkbox">
                       <label for="form__input-checkbox" class="form__label">Lorem Ipsum is simply dummy text</label>
-                      <input checked type="checkbox" id="form__input-checkbox" class="form__input-checkbox" required>
+                      <input checked type="checkbox" name="confirm" id="form__input-checkbox" class="form__input-checkbox" required>
                       <span class="form__checkbox-dot"></span>
                       <span class="form__error">Lorem Ipsum is simply dummy</span>
                     </div>
@@ -421,7 +376,7 @@
 
 
   <script>
-    var app = new Vue({
+    new Vue({
       el: '#range-vue',
       data: {
         value: 3000
